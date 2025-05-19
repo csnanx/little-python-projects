@@ -36,3 +36,13 @@ user_choice = choices[user_choice_index]
 print(f"Your Choice:\n{user_choice}")
 print(f"Computer's Choice:\n{computer_choice}")
 
+if user_choice == computer_choice:
+    print("It's a TIE!")
+elif user_choice == rock and computer_choice == scissors:
+    print("You WIN!")
+elif user_choice == paper and computer_choice == rock:
+    print("You WIN!")
+elif user_choice == scissors and computer_choice == paper:
+    print("You WIN!")
+else:
+    print("You LOSE!")
