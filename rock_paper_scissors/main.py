@@ -29,3 +29,7 @@ scissors = '''
 
 choices = [rock, paper, scissors]
 computer_choice = random.choice(choices)
+
+user_choice_index = int(input("0 for 'rock', 1 for 'paper' and 2 for 'scissors'\nEnter your choice: "))
+user_choice = choices[user_choice_index]
+
