@@ -1,3 +1,5 @@
+import random
+
 rock = '''
     _______
 ---'   ____)
@@ -24,3 +26,6 @@ scissors = '''
       (____)
 ---.__(___)
 '''
+
+choices = [rock, paper, scissors]
+computer_choice = random.choice(choices)
