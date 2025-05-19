@@ -23,4 +23,11 @@ for i in range(numbers_number):
     random_number = random.choice(numbers)
     password_list.append(random_number)
 
-print(f"Your password is: {password_list}")
+random.shuffle(password_list)
+
+password = ""
+
+for char in password_list:
+    password += char
+
+print(f"Your random password is: {password}")
