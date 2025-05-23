@@ -16,3 +16,11 @@ while other_bidders:
         other_bidders = False
     elif more_bidders == "yes":
         print("\n" * 50)
+
+highest_bid = 0
+for name in auction_data:
+    if auction_data[name] > highest_bid:
+        winner = name
+        highest_bid = auction_data[name]
+
+print(f"The winner is {winner} with a bid of ${highest_bid}")
